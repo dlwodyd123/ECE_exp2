@@ -1,0 +1,13 @@
+module logic_gate(a,b,x,y,z,s,t);
+
+input a,b;
+output x,y,z,s,t;
+wire x,y,z,s,t;
+
+assign x=a&b;
+assign y=a|b;
+assign z=a^b;
+assign s=~(a|b);
+assign t=~(a&b);
+
+endmodule
